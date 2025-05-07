@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sai Harshitha Laggu</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simple-icons@v8/simple-icons.min.css">
+  <style>
+    /* Basic Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background-color: #f9f9f9;
+      scroll-behavior: smooth;
+    }
+
+    /* Navigation */
+    nav {
+      background-color: #333;
+      padding: 1rem 2rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      opacity: 0;
+      animation: fadeIn 1s forwards;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease, transform 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #007bff;
+      transform: scale(1.1);
+    }
+
+    /* Sections */
+    .section {
+      padding: 4rem 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+      text-align: center;
+      opacity: 0;
+      animation: fadeInUp 1s forwards;
+    }
+
+    .section h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1.5rem;
+      color: #333;
+    }
+
+    .section p {
+      font-size: 1.1rem;
+      color: #555;
+      margin-bottom: 1rem;
+    }
+
+    /* Home Section */
+    #home {
+      background-color: #fff;
+      padding: 6rem 2rem;
+      text-align: center;
+    }
+
+    #home h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+      animation: slideIn 1s ease-out;
+    }
+
+    #home h1 span {
+      color: #007bff;
+    }
+
+    #home p {
+      font-size: 1.5rem;
+      color: #777;
+    }
+
+    /* Tech Stack Logos */
+    .tech-stack {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    .tech-stack i {
+      font-size: 3rem;
+      color: #333;
+      transition: transform 0.3s ease;
+    }
+
+    .tech-stack i:hover {
+      transform: scale(1.2);
+    }
+
+    /* Projects */
+    .project {
+      margin-bottom: 2rem;
+      text-align: left;
+      animation: fadeInUp 1.5s forwards;
+    }
+
+    .project h3 {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+      color: #007bff;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .project h3 i {
+      font-size: 2rem;
+    }
+
+    /* Contact */
+    #contact a {
+      color: #007bff;
+      text-decoration: none;
+      font-size: 1.2rem;
+      transition: color 0.3s ease;
+      margin: 0 1rem;
+    }
+
+    #contact a:hover {
+      text-decoration: underline;
+      color: #0056b3;
+    }
+
+    /* Social Media Icons */
+    .social-icons {
+      margin-top: 1rem;
+    }
+
+    .social-icons a {
+      font-size: 2rem;
+      color: #333;
+      margin: 0 1rem;
+      transition: color 0.3s ease, transform 0.3s ease;
+    }
+
+    .social-icons a:hover {
+      color: #007bff;
+      transform: scale(1.2);
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes slideIn {
+      from {
+        transform: translateX(-100%);
+      }
+      to {
+        transform: translateX(0);
+      }
+    }
+
+    /* Mobile Responsiveness */
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        gap: 1rem;
+      }
+
+      .section {
+        padding: 2rem;
+      }
+
+      #home h1 {
+        font-size: 2.5rem;
+      }
+
+      #home p {
+        font-size: 1.3rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section id="home" class="section">
+    <h1><span>Sai</span> <span style="color: #007bff;">Harshitha</span> Laggu</h1>
+    <p>AWS / Azure Engineer</p>
+    <div class="tech-stack">
+      <i class="fab fa-aws"></i>
+      <i class="fab fa-microsoft"></i>
+      <i class="simple-icons:terraform"></i>
+      <i class="fab fa-python"></i>
+      <i class="fab fa-github"></i>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <h2>About</h2>
+    <p>
+      Final-year Master’s in Computer Science student at the University of South Dakota, specializing in cloud computing. Passionate about AWS, Azure, and DevOps, with hands-on experience in Terraform, Python, and CI/CD pipelines.
+    </p>
+    <p>
+      <strong>Tech Stack:</strong> AWS, Azure, Terraform, Python, GitHub<br>
+      <strong>Interests:</strong> Cricket, Badminton, Road Trips<br>
+      <strong>Goal:</strong> AWS Certified Cloud Practitioner by June 2024.
+    </p>
+  </section>
+
+  <section id="projects" class="section">
+    <h2>Projects</h2>
+
+    <div class="project">
+      <h3><i class="fas fa-chart-line"></i> Fraud Detection with GNNs</h3>
+      <p>Developed a graph neural network-based system to detect fraudulent transactions using PyTorch and DGL, deployed on AWS.</p>
+    </div>
+
+    <div class="project">
+      <h3><i class="fas fa-comments"></i> Hate Speech Detection</h3>
+      <p>Built a machine learning model using AWS Comprehend, SageMaker, and BERT/RoBERTa to identify hate speech, with a Streamlit dashboard for visualization.</p>
+    </div>
+
+    <div class="project">
+      <h3><i class="fas fa-lock"></i> Secure Audio Communication</h3>
+      <p>Created a Python application for AES-256 encryption of audio files, using Tkinter for the GUI and PyDub for audio processing.</p>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <h2>Contact</h2>
+    <div class="social-icons">
+      <a href="https://www.linkedin.com/in/sai-harshitha-laggu" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+      <a href="https://github.com/SaiHarshithaLaggu20" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+      <a href="mailto:saiharshita@gmail.com"><i class="fas fa-envelope"></i> Email</a>
+    </div>
+  </section>
+</body>
+</html>
